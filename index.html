@@ -9,13 +9,58 @@
     body {
       padding: 0;
       margin: 0;
-     
+      background-color:#152B25 ;
     }
+    .mobile{  
+      
+    }
+
+    @media (max-width: 860px) {
+      .iframe{
+        display: none;
+      }
+      .mobile{
+        height: 600px;
+        background-color: #152B25;
+        margin: auto;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+      }
+      .mobile img {
+        width: 150px;
+        height: 200px;
+      
+      }
+      .mobile a button{
+        
+        width: 150px;
+        height: 40px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border-radius: 15px;
+        border: none;
+        background-color:#9EFDA9 ;
+        transition: scale(1.1);
+        cursor: pointer;
+      }
+    }
+
+   
+
   </style>
 </head>
 <body>
-  <div style="width: 100%; height: 100vh;">
-     <embed width="100%" height="100%" src="rowdy.pdf"></embed> 
+  <div class="iframe" style="width: 100%; height: 100vh;">
+     <iframe width="100%" height="100%" src="Rowdy Parrots.pdf"></iframe> 
+  </div>
+  <div class="mobile">
+      <img src="parrot.png"/>
+      <a href="Rowdy Parrots.pdf" download><button>Download PDF</button></a>
   </div>
 </body>
 </html>
